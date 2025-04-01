@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "lib": ["es6", "dom", "es2017"],
+      "jsx": "react",
+      "strict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": false,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "baseUrl": ".",
+      "paths": {
+        "@helpers/*": ["src/helpers/*"],
+        "@commands/*": ["src/commands/*"],
+        "@styles/*": ["src/styles/*"]
+      },
+      "typeRoots": ["./node_modules/@types", "./src/types"]
+    },
+    "include": ["src/**/*"],
+    "exclude": [
+      "node_modules",
+      "dist",
+      "test",
+      "**/*.spec.ts",
+      "**/*.test.ts"
+    ]
+  }

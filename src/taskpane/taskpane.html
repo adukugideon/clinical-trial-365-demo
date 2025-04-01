@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clinical Trial Reviewer</title>
+    <link rel="stylesheet" href="./taskpane.css">
+    <link rel="stylesheet" href="../styles/clinical.css">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="clinical-header">
+            <img src="../../assets/icons/icon-32.png" alt="Logo">
+            <h1>Clinical Trial Review</h1>
+        </header>
+        
+        <div class="clinical-container">
+            <section class="input-section">
+                <h2>1. Select Trial Text</h2>
+                <div class="selection-info" id="selectionInfo">
+                    <p>No text selected. Highlight text in document first.</p>
+                </div>
+                
+                <h2>2. Review Parameters</h2>
+                <div class="form-group">
+                    <label for="reviewTemplate">Template:</label>
+                    <select id="reviewTemplate" class="form-control">
+                        <option value="comprehensive">Comprehensive Review</option>
+                        <option value="methods">Methods Analysis</option>
+                        <option value="statistics">Statistical Review</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="customPromptGroup" style="display:none;">
+                    <label for="customPrompt">Custom Instructions:</label>
+                    <textarea id="customPrompt" class="form-control" rows="3" 
+                        placeholder="E.g. 'Focus on patient demographics and adverse events'"></textarea>
+                </div>
+            </section>
+            
+            <section class="action-section">
+                <button id="analyzeBtn" class="btn btn-primary">
+                    <span class="icon">🔍</span> Analyze Text
+                </button>
+                <button id="generateBtn" class="btn btn-main" disabled>
+                    <span class="icon">✍️</span> Generate Review
+                </button>
+            </section>
+            
+            <section class="output-section" id="outputSection" style="display:none;">
+                <h2>3. Generated Review</h2>
+                <div class="validation-summary" id="validationSummary"></div>
+                <div class="review-output" id="reviewOutput"></div>
+                <div class="review-actions">
+                    <button id="insertBtn" class="btn btn-insert">Insert into Document</button>
+                    <button id="saveTemplateBtn" class="btn btn-secondary">Save as Template</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="./taskpane.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.clinical-header {
+    background-color: #005b96;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.clinical-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-main {
+    background-color: #005b96;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #1a936f;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.clinical-review h2 {
+    color: #005b96;
+    border-bottom: 2px solid #005b96;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.clinical-review h3 {
+    color: #1a936f;
+    margin-top: 15px;
+}
+
+.clinical-review li {
+    margin-bottom: 5px;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.tips {
+    background-color: #e7f5fe;
+    border-left: 4px solid #005b96;
+    padding: 10px;
+    margin: 10px 0;
+}
