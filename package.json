@@ -4,7 +4,8 @@
     "scripts": {
         "build": "webpack --mode production",
         "dev": "webpack serve --mode development",
-        "start": "office-addin-debugging start manifest.xml",
+        "start": "office-addin-debugging start manifest.xml --bind-address 0.0.0.0",
+        "cert:install": "cp ~/.office-addin-dev-certs/localhost.crt /usr/local/share/ca-certificates/ && sudo update-ca-certificates",
         "stop": "office-addin-debugging stop manifest.xml",
         "test": "jest"
     },
