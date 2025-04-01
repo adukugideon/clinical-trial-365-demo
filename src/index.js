@@ -1,5 +1,3 @@
-// import { initializeIcons } from '@fluentui/react/lib/Icons';
-// import { App } from './taskpane/App'; // Only if using React
 
 Office.onReady(() => {
   initializeIcons();
@@ -10,17 +8,3 @@ Office.onReady(() => {
   }
 });
 
-// class ClinicalReviewApp {
-//   constructor() {
-//     this.initUI();
-//     this.bindEvents();
-//   }
-  
-//   initUI() {
-//     // Initialization logic if not using React
-//   }
-  
-//   bindEvents() {
-//     // Global event bindings
-//   }
-// }
